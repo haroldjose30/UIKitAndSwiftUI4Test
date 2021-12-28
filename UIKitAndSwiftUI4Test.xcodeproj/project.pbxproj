@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		528087E2277A9AAB000A378D /* SwiftUI_ViewsAndModifiersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528087E1277A9AAB000A378D /* SwiftUI_ViewsAndModifiersView.swift */; };
+		528087E6277AB2F0000A378D /* ViewCodeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528087E5277AB2F0000A378D /* ViewCodeBase.swift */; };
+		528087E9277AB360000A378D /* ViewCodeBaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528087E8277AB360000A378D /* ViewCodeBaseType.swift */; };
+		528087EC277AB452000A378D /* ViewCode_LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528087EB277AB452000A378D /* ViewCode_LoginView.swift */; };
+		528087EE277AB45D000A378D /* ViewCode_LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528087ED277AB45D000A378D /* ViewCode_LoginViewController.swift */; };
+		528087F1277AB593000A378D /* SwiftUI_LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528087F0277AB593000A378D /* SwiftUI_LoginView.swift */; };
+		528087F3277AB5AB000A378D /* SwiftUI_LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528087F2277AB5AB000A378D /* SwiftUI_LoginViewModel.swift */; };
+		528087F5277AB62B000A378D /* ViewCode_LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528087F4277AB62B000A378D /* ViewCode_LoginViewModel.swift */; };
 		844DF2C9277258C6008B95CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2C8277258C6008B95CF /* AppDelegate.swift */; };
 		844DF2CB277258C6008B95CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2CA277258C6008B95CF /* SceneDelegate.swift */; };
 		844DF2CD277258C6008B95CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2CC277258C6008B95CF /* ViewController.swift */; };
@@ -36,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		528087E1277A9AAB000A378D /* SwiftUI_ViewsAndModifiersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUI_ViewsAndModifiersView.swift; sourceTree = "<group>"; };
+		528087E5277AB2F0000A378D /* ViewCodeBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeBase.swift; sourceTree = "<group>"; };
+		528087E8277AB360000A378D /* ViewCodeBaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeBaseType.swift; sourceTree = "<group>"; };
+		528087EB277AB452000A378D /* ViewCode_LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode_LoginView.swift; sourceTree = "<group>"; };
+		528087ED277AB45D000A378D /* ViewCode_LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode_LoginViewController.swift; sourceTree = "<group>"; };
+		528087F0277AB593000A378D /* SwiftUI_LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LoginView.swift; sourceTree = "<group>"; };
+		528087F2277AB5AB000A378D /* SwiftUI_LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LoginViewModel.swift; sourceTree = "<group>"; };
+		528087F4277AB62B000A378D /* ViewCode_LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode_LoginViewModel.swift; sourceTree = "<group>"; };
 		844DF2C5277258C6008B95CF /* UIKitAndSwiftUI4Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitAndSwiftUI4Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844DF2C8277258C6008B95CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844DF2CA277258C6008B95CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +92,113 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		528087D4277A93AA000A378D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				528087D7277A93C5000A378D /* SwiftUI */,
+				528087D6277A93BE000A378D /* UIKit */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		528087D5277A93B4000A378D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				844DF2C8277258C6008B95CF /* AppDelegate.swift */,
+				844DF2CA277258C6008B95CF /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		528087D6277A93BE000A378D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				528087E4277AB1DA000A378D /* Storyboard */,
+				528087E3277AB1D0000A378D /* ViewCode */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		528087D7277A93C5000A378D /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				528087E0277A9A84000A378D /* 01_ViewsAndModifiers */,
+				528087EF277AB57C000A378D /* Login */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		528087D8277A9403000A378D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				844DF2CC277258C6008B95CF /* ViewController.swift */,
+				844DF2CE277258C6008B95CF /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		528087D9277A940A000A378D /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				844DF2D3277258C7008B95CF /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		528087E0277A9A84000A378D /* 01_ViewsAndModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				528087E1277A9AAB000A378D /* SwiftUI_ViewsAndModifiersView.swift */,
+			);
+			path = 01_ViewsAndModifiers;
+			sourceTree = "<group>";
+		};
+		528087E3277AB1D0000A378D /* ViewCode */ = {
+			isa = PBXGroup;
+			children = (
+				528087E7277AB33E000A378D /* Base */,
+				528087EA277AB442000A378D /* Login */,
+			);
+			path = ViewCode;
+			sourceTree = "<group>";
+		};
+		528087E4277AB1DA000A378D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				528087D9277A940A000A378D /* Launch */,
+				528087D8277A9403000A378D /* Main */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		528087E7277AB33E000A378D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				528087E5277AB2F0000A378D /* ViewCodeBase.swift */,
+				528087E8277AB360000A378D /* ViewCodeBaseType.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		528087EA277AB442000A378D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				528087EB277AB452000A378D /* ViewCode_LoginView.swift */,
+				528087ED277AB45D000A378D /* ViewCode_LoginViewController.swift */,
+				528087F4277AB62B000A378D /* ViewCode_LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		528087EF277AB57C000A378D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				528087F0277AB593000A378D /* SwiftUI_LoginView.swift */,
+				528087F2277AB5AB000A378D /* SwiftUI_LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		844DF2BC277258C5008B95CF = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +222,9 @@
 		844DF2C7277258C6008B95CF /* UIKitAndSwiftUI4Test */ = {
 			isa = PBXGroup;
 			children = (
-				844DF2C8277258C6008B95CF /* AppDelegate.swift */,
-				844DF2CA277258C6008B95CF /* SceneDelegate.swift */,
-				844DF2CC277258C6008B95CF /* ViewController.swift */,
-				844DF2CE277258C6008B95CF /* Main.storyboard */,
+				528087D5277A93B4000A378D /* App */,
+				528087D4277A93AA000A378D /* Presentation */,
 				844DF2D1277258C7008B95CF /* Assets.xcassets */,
-				844DF2D3277258C7008B95CF /* LaunchScreen.storyboard */,
 				844DF2D6277258C7008B95CF /* Info.plist */,
 			);
 			path = UIKitAndSwiftUI4Test;
@@ -258,9 +378,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528087E2277A9AAB000A378D /* SwiftUI_ViewsAndModifiersView.swift in Sources */,
+				528087F5277AB62B000A378D /* ViewCode_LoginViewModel.swift in Sources */,
+				528087EC277AB452000A378D /* ViewCode_LoginView.swift in Sources */,
+				528087F3277AB5AB000A378D /* SwiftUI_LoginViewModel.swift in Sources */,
+				528087E6277AB2F0000A378D /* ViewCodeBase.swift in Sources */,
+				528087E9277AB360000A378D /* ViewCodeBaseType.swift in Sources */,
+				528087EE277AB45D000A378D /* ViewCode_LoginViewController.swift in Sources */,
 				844DF2CD277258C6008B95CF /* ViewController.swift in Sources */,
 				844DF2C9277258C6008B95CF /* AppDelegate.swift in Sources */,
 				844DF2CB277258C6008B95CF /* SceneDelegate.swift in Sources */,
+				528087F1277AB593000A378D /* SwiftUI_LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
