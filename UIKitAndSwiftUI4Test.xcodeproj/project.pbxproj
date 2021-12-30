@@ -24,6 +24,7 @@
 		844DF2E0277258C7008B95CF /* UIKitAndSwiftUI4TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2DF277258C7008B95CF /* UIKitAndSwiftUI4TestTests.swift */; };
 		844DF2EA277258C7008B95CF /* UIKitAndSwiftUI4TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2E9277258C7008B95CF /* UIKitAndSwiftUI4TestUITests.swift */; };
 		844DF2EC277258C7008B95CF /* UIKitAndSwiftUI4TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2EB277258C7008B95CF /* UIKitAndSwiftUI4TestUITestsLaunchTests.swift */; };
+		84D4CCE6277D7D1F008766A8 /* SwiftUI_LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4CCE5277D7D1F008766A8 /* SwiftUI_LoginViewController.swift */; };
 		84F88D6C277D23EB004177C2 /* SwiftUI_LoginViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F88D6B277D23EB004177C2 /* SwiftUI_LoginViewModelType.swift */; };
 		84F88D6E277D2AD4004177C2 /* SwiftUI_LoginViewModel_Fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F88D6D277D2AD4004177C2 /* SwiftUI_LoginViewModel_Fake.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		844DF2E5277258C7008B95CF /* UIKitAndSwiftUI4TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitAndSwiftUI4TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844DF2E9277258C7008B95CF /* UIKitAndSwiftUI4TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitAndSwiftUI4TestUITests.swift; sourceTree = "<group>"; };
 		844DF2EB277258C7008B95CF /* UIKitAndSwiftUI4TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitAndSwiftUI4TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84D4CCE5277D7D1F008766A8 /* SwiftUI_LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LoginViewController.swift; sourceTree = "<group>"; };
 		84F88D6B277D23EB004177C2 /* SwiftUI_LoginViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LoginViewModelType.swift; sourceTree = "<group>"; };
 		84F88D6D277D2AD4004177C2 /* SwiftUI_LoginViewModel_Fake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LoginViewModel_Fake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +171,7 @@
 		528087E4277AB1DA000A378D /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				84DC7C43277D3C0800AD6427 /* Login */,
 				528087D9277A940A000A378D /* Launch */,
 				528087D8277A9403000A378D /* Main */,
 			);
@@ -198,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				528087F0277AB593000A378D /* SwiftUI_LoginView.swift */,
+				84D4CCE5277D7D1F008766A8 /* SwiftUI_LoginViewController.swift */,
 				84F88D6D277D2AD4004177C2 /* SwiftUI_LoginViewModel_Fake.swift */,
 				528087F2277AB5AB000A378D /* SwiftUI_LoginViewModel.swift */,
 				84F88D6B277D23EB004177C2 /* SwiftUI_LoginViewModelType.swift */,
@@ -251,6 +255,13 @@
 				844DF2EB277258C7008B95CF /* UIKitAndSwiftUI4TestUITestsLaunchTests.swift */,
 			);
 			path = UIKitAndSwiftUI4TestUITests;
+			sourceTree = "<group>";
+		};
+		84DC7C43277D3C0800AD6427 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +407,7 @@
 				844DF2CD277258C6008B95CF /* ViewController.swift in Sources */,
 				844DF2C9277258C6008B95CF /* AppDelegate.swift in Sources */,
 				844DF2CB277258C6008B95CF /* SceneDelegate.swift in Sources */,
+				84D4CCE6277D7D1F008766A8 /* SwiftUI_LoginViewController.swift in Sources */,
 				528087F1277AB593000A378D /* SwiftUI_LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

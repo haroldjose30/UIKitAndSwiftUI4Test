@@ -18,8 +18,7 @@ struct SwiftUI_LoginView : View {
     @State var infoMessage: String = ""
     
     var body: some View {
-        VStack() {
-            VStack {
+        VStack {
             Image(systemName: "bonjour")
                 .resizable()
                 .aspectRatio(contentMode: ContentMode.fit)
@@ -36,20 +35,24 @@ struct SwiftUI_LoginView : View {
                 .font(.subheadline)
                 .padding(.bottom,70)
             
-                TextField("Email", text: $email)
+            TextField("Email", text: $email)
                 .padding()
+                .background(Color.gray.opacity(0.2))
                 .cornerRadius(4.0)
                 .padding(.bottom,15)
             
             SecureField("Password", text: $password)
                 .padding()
+                .background(Color.gray.opacity(0.2))
                 .cornerRadius(4.0)
                 .padding(.bottom, 10)
             
             HStack() {
                 Spacer()
+                
                 Text("Forgot Password?")
                     .font(.system(size: 15))
+                    .foregroundColor(.gray)
                 
             }.padding(.bottom, 40)
             
@@ -68,7 +71,6 @@ struct SwiftUI_LoginView : View {
             Text(self.infoMessage)
             
         }.padding()
-        }
     }
     
     func loginAction() {
@@ -79,6 +81,34 @@ struct SwiftUI_LoginView : View {
 
 struct SwiftUI_LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUI_LoginView(loginViewModel: SwiftUI_LoginViewModel_Fake())
+        
+        let devices = [
+            "iPhone 13 mini",
+            "iPad (9th generation)",
+            "iPhone 8"
+        ]
+        
+        let viewToPreview = SwiftUI_LoginView(loginViewModel: SwiftUI_LoginViewModel_Fake())
+        
+        viewToPreview
+            .preferredColorScheme(.light)
+            .previewDisplayName("light Mode")
+        
+        viewToPreview
+            .preferredColorScheme(.dark)
+            .previewDisplayName("dark Mode")
+        
+        if #available(iOS 15.0, *) {
+            viewToPreview
+                .previewInterfaceOrientation(.landscapeRight)
+                .previewDisplayName("landscapeRight")
+        }
+        
+        ForEach(devices, id: \.self) { device in
+            viewToPreview
+                .previewDevice(PreviewDevice(rawValue: device))
+                .previewDisplayName(device)
+        }
+        
     }
 }
