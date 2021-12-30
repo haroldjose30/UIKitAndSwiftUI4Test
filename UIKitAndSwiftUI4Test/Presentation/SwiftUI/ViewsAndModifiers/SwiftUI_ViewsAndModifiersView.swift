@@ -28,7 +28,7 @@ struct SwiftUI_ViewsAndModifiersView: View {
             
             Button(action: {
                 // Your code here
-                print("teste")
+                print("Button pressed")
             }) {
                 Text("Button With Shadow")
                     .font(.title)
@@ -50,9 +50,33 @@ struct SwiftUI_ViewsAndModifiersView: View {
 
 struct ViewsAndModifiersView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUI_ViewsAndModifiersView()
         
-        SwiftUI_ViewsAndModifiersView()
+        let devices = [
+            "iPhone 13 mini",
+            "iPad (9th generation)"
+        ]
+        
+        let viewToPreview = SwiftUI_ViewsAndModifiersView()
+        
+        viewToPreview
+            .preferredColorScheme(.light)
+            .previewDisplayName("light Mode")
+        
+        viewToPreview
             .preferredColorScheme(.dark)
+            .previewDisplayName("dark Mode")
+        
+        if #available(iOS 15.0, *) {
+            viewToPreview
+                .previewInterfaceOrientation(.landscapeRight)
+                .previewDisplayName("landscapeRight")
+        }
+        
+        ForEach(devices, id: \.self) { device in
+            viewToPreview
+                .previewDevice(PreviewDevice(rawValue: device))
+                .previewDisplayName(device)
+        }
+        
     }
 }

@@ -6,3 +6,79 @@
 //
 
 import Foundation
+import SwiftUI
+import Combine
+
+struct SwiftUI_LoginView : View {
+    
+    var loginViewModel: SwiftUI_LoginViewModelType
+    
+    @State var email: String = ""
+    @State var password: String = ""
+    @State var infoMessage: String = ""
+    
+    var body: some View {
+        VStack() {
+            VStack {
+            Image(systemName: "bonjour")
+                .resizable()
+                .aspectRatio(contentMode: ContentMode.fit)
+                .frame(width: 74.0, height: 74.0)
+                .foregroundColor(.green)
+                .padding(.bottom, 20)
+            
+            Text("UIKit & SwiftUI")
+                .bold()
+                .foregroundColor(.green)
+                .font(.title)
+            
+            Text("Simple login page with SwiftUI")
+                .font(.subheadline)
+                .padding(.bottom,70)
+            
+                TextField("Email", text: $email)
+                .padding()
+                .cornerRadius(4.0)
+                .padding(.bottom,15)
+            
+            SecureField("Password", text: $password)
+                .padding()
+                .cornerRadius(4.0)
+                .padding(.bottom, 10)
+            
+            HStack() {
+                Spacer()
+                Text("Forgot Password?")
+                    .font(.system(size: 15))
+                
+            }.padding(.bottom, 40)
+            
+            Button(action: loginAction) {
+                HStack(alignment: .center) {
+                    Spacer()
+                    Text("Login")
+                        .foregroundColor(Color.white)
+                        .bold()
+                    Spacer()
+                }
+            }.padding()
+                .background(Color.green)
+                .cornerRadius(4.0)
+            
+            Text(self.infoMessage)
+            
+        }.padding()
+        }
+    }
+    
+    func loginAction() {
+        infoMessage = loginViewModel.performLoginAction(email: self.email, password: self.password)
+    }
+    
+}
+
+struct SwiftUI_LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        SwiftUI_LoginView(loginViewModel: SwiftUI_LoginViewModel_Fake())
+    }
+}
