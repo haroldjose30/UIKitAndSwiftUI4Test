@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  UIKitAndSwiftUI4Test
-//
-//  Created by Jose Harold on 21/12/2021.
-//
-
 import UIKit
 
 @main

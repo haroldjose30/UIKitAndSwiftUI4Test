@@ -1,10 +1,3 @@
-//
-//  SwiftUI_LoginView.swift
-//  UIKitAndSwiftUI4Test
-//
-//  Created by Harold Jose Barros Gonçalves on 28/12/21.
-//
-
 import Foundation
 import SwiftUI
 import Combine
@@ -88,7 +81,7 @@ struct SwiftUI_LoginView_Previews: PreviewProvider {
             "iPhone 8"
         ]
         
-        let viewToPreview = SwiftUI_LoginView(loginViewModel: SwiftUI_LoginViewModel_Fake())
+        let viewToPreview = SwiftUI_LoginView(loginViewModel: SwiftUI_LoginViewModel())
         
         viewToPreview
             .preferredColorScheme(.light)

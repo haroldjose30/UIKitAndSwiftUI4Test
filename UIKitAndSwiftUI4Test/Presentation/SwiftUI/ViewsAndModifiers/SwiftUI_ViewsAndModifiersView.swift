@@ -1,12 +1,3 @@
-//
-//  ViewsAndModifiersView.swift
-//  UIKitAndSwiftUI4Test
-//
-//  Created by Harold Jose Barros Gonçalves on 27/12/21.
-//
-
-
-
 import SwiftUI
 
 struct SwiftUI_ViewsAndModifiersView: View {

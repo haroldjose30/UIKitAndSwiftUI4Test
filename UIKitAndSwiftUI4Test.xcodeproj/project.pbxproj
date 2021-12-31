@@ -17,16 +17,16 @@
 		528087F5277AB62B000A378D /* ViewCode_LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528087F4277AB62B000A378D /* ViewCode_LoginViewModel.swift */; };
 		844DF2C9277258C6008B95CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2C8277258C6008B95CF /* AppDelegate.swift */; };
 		844DF2CB277258C6008B95CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2CA277258C6008B95CF /* SceneDelegate.swift */; };
-		844DF2CD277258C6008B95CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2CC277258C6008B95CF /* ViewController.swift */; };
+		844DF2CD277258C6008B95CF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2CC277258C6008B95CF /* MainViewController.swift */; };
 		844DF2D0277258C6008B95CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844DF2CE277258C6008B95CF /* Main.storyboard */; };
 		844DF2D2277258C7008B95CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844DF2D1277258C7008B95CF /* Assets.xcassets */; };
 		844DF2D5277258C7008B95CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844DF2D3277258C7008B95CF /* LaunchScreen.storyboard */; };
 		844DF2E0277258C7008B95CF /* UIKitAndSwiftUI4TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2DF277258C7008B95CF /* UIKitAndSwiftUI4TestTests.swift */; };
 		844DF2EA277258C7008B95CF /* UIKitAndSwiftUI4TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2E9277258C7008B95CF /* UIKitAndSwiftUI4TestUITests.swift */; };
 		844DF2EC277258C7008B95CF /* UIKitAndSwiftUI4TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2EB277258C7008B95CF /* UIKitAndSwiftUI4TestUITestsLaunchTests.swift */; };
+		84C8BDFB277E5D1E00EF3334 /* ViewCode_CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C8BDFA277E5D1E00EF3334 /* ViewCode_CustomButton.swift */; };
 		84D4CCE6277D7D1F008766A8 /* SwiftUI_LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4CCE5277D7D1F008766A8 /* SwiftUI_LoginViewController.swift */; };
 		84F88D6C277D23EB004177C2 /* SwiftUI_LoginViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F88D6B277D23EB004177C2 /* SwiftUI_LoginViewModelType.swift */; };
-		84F88D6E277D2AD4004177C2 /* SwiftUI_LoginViewModel_Fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F88D6D277D2AD4004177C2 /* SwiftUI_LoginViewModel_Fake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		844DF2C5277258C6008B95CF /* UIKitAndSwiftUI4Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitAndSwiftUI4Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844DF2C8277258C6008B95CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844DF2CA277258C6008B95CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		844DF2CC277258C6008B95CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		844DF2CC277258C6008B95CF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		844DF2CF277258C6008B95CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		844DF2D1277258C7008B95CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844DF2D4277258C7008B95CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,9 +68,9 @@
 		844DF2E5277258C7008B95CF /* UIKitAndSwiftUI4TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitAndSwiftUI4TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844DF2E9277258C7008B95CF /* UIKitAndSwiftUI4TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitAndSwiftUI4TestUITests.swift; sourceTree = "<group>"; };
 		844DF2EB277258C7008B95CF /* UIKitAndSwiftUI4TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitAndSwiftUI4TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84C8BDFA277E5D1E00EF3334 /* ViewCode_CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode_CustomButton.swift; sourceTree = "<group>"; };
 		84D4CCE5277D7D1F008766A8 /* SwiftUI_LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LoginViewController.swift; sourceTree = "<group>"; };
 		84F88D6B277D23EB004177C2 /* SwiftUI_LoginViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LoginViewModelType.swift; sourceTree = "<group>"; };
-		84F88D6D277D2AD4004177C2 /* SwiftUI_LoginViewModel_Fake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LoginViewModel_Fake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +137,7 @@
 		528087D8277A9403000A378D /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				844DF2CC277258C6008B95CF /* ViewController.swift */,
+				844DF2CC277258C6008B95CF /* MainViewController.swift */,
 				844DF2CE277258C6008B95CF /* Main.storyboard */,
 			);
 			path = Main;
@@ -163,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				528087E7277AB33E000A378D /* Base */,
+				84C8BDF7277E5A2400EF3334 /* Components */,
 				528087EA277AB442000A378D /* Login */,
 			);
 			path = ViewCode;
@@ -202,7 +203,6 @@
 			children = (
 				528087F0277AB593000A378D /* SwiftUI_LoginView.swift */,
 				84D4CCE5277D7D1F008766A8 /* SwiftUI_LoginViewController.swift */,
-				84F88D6D277D2AD4004177C2 /* SwiftUI_LoginViewModel_Fake.swift */,
 				528087F2277AB5AB000A378D /* SwiftUI_LoginViewModel.swift */,
 				84F88D6B277D23EB004177C2 /* SwiftUI_LoginViewModelType.swift */,
 			);
@@ -255,6 +255,22 @@
 				844DF2EB277258C7008B95CF /* UIKitAndSwiftUI4TestUITestsLaunchTests.swift */,
 			);
 			path = UIKitAndSwiftUI4TestUITests;
+			sourceTree = "<group>";
+		};
+		84C8BDF7277E5A2400EF3334 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				84C8BDF9277E5A5A00EF3334 /* CustomButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		84C8BDF9277E5A5A00EF3334 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				84C8BDFA277E5D1E00EF3334 /* ViewCode_CustomButton.swift */,
+			);
+			path = CustomButton;
 			sourceTree = "<group>";
 		};
 		84DC7C43277D3C0800AD6427 /* Login */ = {
@@ -403,9 +419,9 @@
 				528087E6277AB2F0000A378D /* ViewCodeBase.swift in Sources */,
 				528087E9277AB360000A378D /* ViewCodeBaseType.swift in Sources */,
 				528087EE277AB45D000A378D /* ViewCode_LoginViewController.swift in Sources */,
-				84F88D6E277D2AD4004177C2 /* SwiftUI_LoginViewModel_Fake.swift in Sources */,
-				844DF2CD277258C6008B95CF /* ViewController.swift in Sources */,
+				844DF2CD277258C6008B95CF /* MainViewController.swift in Sources */,
 				844DF2C9277258C6008B95CF /* AppDelegate.swift in Sources */,
+				84C8BDFB277E5D1E00EF3334 /* ViewCode_CustomButton.swift in Sources */,
 				844DF2CB277258C6008B95CF /* SceneDelegate.swift in Sources */,
 				84D4CCE6277D7D1F008766A8 /* SwiftUI_LoginViewController.swift in Sources */,
 				528087F1277AB593000A378D /* SwiftUI_LoginView.swift in Sources */,
@@ -592,7 +608,6 @@
 				INFOPLIST_FILE = UIKitAndSwiftUI4Test/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -620,7 +635,6 @@
 				INFOPLIST_FILE = UIKitAndSwiftUI4Test/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

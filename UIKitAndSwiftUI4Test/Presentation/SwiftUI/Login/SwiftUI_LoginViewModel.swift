@@ -1,10 +1,3 @@
-//
-//  SwiftUI_LoginViewModel.swift
-//  UIKitAndSwiftUI4Test
-//
-//  Created by Harold Jose Barros Gonçalves on 28/12/21.
-//
-
 import Foundation
 import Combine
 
@@ -12,9 +5,18 @@ class SwiftUI_LoginViewModel: SwiftUI_LoginViewModelType {
     func performLoginAction(email:String,password:String) -> String {
         print("performLogin action with \(email) and \(password)")
         
-        //login real implemented logic
+        //login logic fake
+        if email.isEmpty || password.isEmpty {
+            return "email and password is required!"
+        }
         
-        return "Login Success!"
+        if email == "1"  && password == "1" {
+            return "login success!"
+        }
+        
+        return "login failed!"
+        
+        
     }
 }
 
