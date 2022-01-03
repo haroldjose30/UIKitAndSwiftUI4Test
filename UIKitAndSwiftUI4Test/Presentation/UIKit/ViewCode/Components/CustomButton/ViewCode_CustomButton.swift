@@ -2,18 +2,18 @@ import Foundation
 import UIKit
 
 class ViewCode_CustomButton: UIButton {
-    init() {
+    
+    init(text:String) {
         super.init(frame: .zero)
-        configureViews()
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.backgroundColor = .systemGreen
+        self.setTitle("ViewCode: \(text) ", for: .normal)
+        self.setTitleColor(UIColor.init(white: 1, alpha: 0.3), for: .highlighted)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    func configureViews(){
-        self.backgroundColor = .blue
-        self.setTitle("ViewCode Button", for: .normal)
-    }
-    
 }
+
+

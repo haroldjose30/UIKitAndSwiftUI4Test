@@ -49,6 +49,8 @@ struct SwiftUI_LoginView : View {
                 
             }.padding(.bottom, 40)
             
+            
+            
             Button(action: loginAction) {
                 HStack(alignment: .center) {
                     Spacer()
@@ -62,6 +64,7 @@ struct SwiftUI_LoginView : View {
                 .cornerRadius(4.0)
             
             Text(self.infoMessage)
+           
             
         }.padding()
     }

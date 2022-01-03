@@ -14,7 +14,8 @@
 		528087EE277AB45D000A378D /* ViewCode_LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528087ED277AB45D000A378D /* ViewCode_LoginViewController.swift */; };
 		528087F1277AB593000A378D /* SwiftUI_LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528087F0277AB593000A378D /* SwiftUI_LoginView.swift */; };
 		528087F3277AB5AB000A378D /* SwiftUI_LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528087F2277AB5AB000A378D /* SwiftUI_LoginViewModel.swift */; };
-		528087F5277AB62B000A378D /* ViewCode_LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528087F4277AB62B000A378D /* ViewCode_LoginViewModel.swift */; };
+		84223BD9277F7A6C0080934C /* ViewCode_CustomButton_Representable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84223BD8277F7A6C0080934C /* ViewCode_CustomButton_Representable.swift */; };
+		84223BDC277F7F5F0080934C /* SwiftUI_WithUIKitComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84223BDB277F7F5F0080934C /* SwiftUI_WithUIKitComponents.swift */; };
 		844DF2C9277258C6008B95CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2C8277258C6008B95CF /* AppDelegate.swift */; };
 		844DF2CB277258C6008B95CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2CA277258C6008B95CF /* SceneDelegate.swift */; };
 		844DF2CD277258C6008B95CF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DF2CC277258C6008B95CF /* MainViewController.swift */; };
@@ -54,7 +55,8 @@
 		528087ED277AB45D000A378D /* ViewCode_LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode_LoginViewController.swift; sourceTree = "<group>"; };
 		528087F0277AB593000A378D /* SwiftUI_LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LoginView.swift; sourceTree = "<group>"; };
 		528087F2277AB5AB000A378D /* SwiftUI_LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LoginViewModel.swift; sourceTree = "<group>"; };
-		528087F4277AB62B000A378D /* ViewCode_LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode_LoginViewModel.swift; sourceTree = "<group>"; };
+		84223BD8277F7A6C0080934C /* ViewCode_CustomButton_Representable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode_CustomButton_Representable.swift; sourceTree = "<group>"; };
+		84223BDB277F7F5F0080934C /* SwiftUI_WithUIKitComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_WithUIKitComponents.swift; sourceTree = "<group>"; };
 		844DF2C5277258C6008B95CF /* UIKitAndSwiftUI4Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitAndSwiftUI4Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844DF2C8277258C6008B95CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844DF2CA277258C6008B95CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,8 +130,9 @@
 		528087D7277A93C5000A378D /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				528087E0277A9A84000A378D /* ViewsAndModifiers */,
 				528087EF277AB57C000A378D /* Login */,
+				528087E0277A9A84000A378D /* ViewsAndModifiers */,
+				84223BDA277F7EC10080934C /* WithUIKitComponents */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -193,7 +196,6 @@
 			children = (
 				528087EB277AB452000A378D /* ViewCode_LoginView.swift */,
 				528087ED277AB45D000A378D /* ViewCode_LoginViewController.swift */,
-				528087F4277AB62B000A378D /* ViewCode_LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -207,6 +209,14 @@
 				84F88D6B277D23EB004177C2 /* SwiftUI_LoginViewModelType.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		84223BDA277F7EC10080934C /* WithUIKitComponents */ = {
+			isa = PBXGroup;
+			children = (
+				84223BDB277F7F5F0080934C /* SwiftUI_WithUIKitComponents.swift */,
+			);
+			path = WithUIKitComponents;
 			sourceTree = "<group>";
 		};
 		844DF2BC277258C5008B95CF = {
@@ -269,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				84C8BDFA277E5D1E00EF3334 /* ViewCode_CustomButton.swift */,
+				84223BD8277F7A6C0080934C /* ViewCode_CustomButton_Representable.swift */,
 			);
 			path = CustomButton;
 			sourceTree = "<group>";
@@ -412,8 +423,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F88D6C277D23EB004177C2 /* SwiftUI_LoginViewModelType.swift in Sources */,
+				84223BDC277F7F5F0080934C /* SwiftUI_WithUIKitComponents.swift in Sources */,
 				528087E2277A9AAB000A378D /* SwiftUI_ViewsAndModifiersView.swift in Sources */,
-				528087F5277AB62B000A378D /* ViewCode_LoginViewModel.swift in Sources */,
 				528087EC277AB452000A378D /* ViewCode_LoginView.swift in Sources */,
 				528087F3277AB5AB000A378D /* SwiftUI_LoginViewModel.swift in Sources */,
 				528087E6277AB2F0000A378D /* ViewCodeBase.swift in Sources */,
@@ -421,6 +432,7 @@
 				528087EE277AB45D000A378D /* ViewCode_LoginViewController.swift in Sources */,
 				844DF2CD277258C6008B95CF /* MainViewController.swift in Sources */,
 				844DF2C9277258C6008B95CF /* AppDelegate.swift in Sources */,
+				84223BD9277F7A6C0080934C /* ViewCode_CustomButton_Representable.swift in Sources */,
 				84C8BDFB277E5D1E00EF3334 /* ViewCode_CustomButton.swift in Sources */,
 				844DF2CB277258C6008B95CF /* SceneDelegate.swift in Sources */,
 				84D4CCE6277D7D1F008766A8 /* SwiftUI_LoginViewController.swift in Sources */,
