@@ -1,9 +1,10 @@
 import Foundation
 import UIKit
 
+
 class ViewCode_LoginViewController: UIViewController {
     let myView = ViewCode_LoginView()
-
+    var loading:Bool = false
     
     override func loadView() {
         super.loadView()
@@ -20,6 +21,17 @@ class ViewCode_LoginViewController: UIViewController {
     }
     
     @objc func buttonAction(){
-        print("ViewCode_LoginView touched...")
+        self.loading = !self.loading
+        self.myView.button.loading(self.loading)
     }
 }
+
+
+//import SwiftUI
+//struct ViewCode_LoginViewController_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ViewControllerPreview {
+//            ViewCode_LoginViewController()
+//        }
+//    }
+//}
